@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">SchoolShedule</string>
+    <string-array name="monday">
+        <item>Математика</item>
+        <item>Русский Язык</item>
+        <item>Химия</item>
+        <item>Физкультура</item>
+        <item>Информатика</item>
+        <item>Информатика</item>
+    </string-array>
+
+    <string-array name="tuesday">
+        <item>Математика</item>
+        <item>Русский Язык</item>
+        <item>Химия</item>
+        <item>Физкультура</item>
+        <item>Информатика</item>
+        <item>Информатика</item>
+    </string-array>
+
+    <string-array name="wednesday">
+        <item>Математика</item>
+        <item>Русский Язык</item>
+        <item>Химия</item>
+        <item>Физкультура</item>
+        <item>Информатика</item>
+        <item>Информатика</item>
+    </string-array>
+
+    <string-array name="thursday">
+        <item>Математика</item>
+        <item>Русский Язык</item>
+        <item>Химия</item>
+        <item>Физкультура</item>
+        <item>Информатика</item>
+        <item>Информатика</item>
+    </string-array>
+
+    <string-array name="friday">
+        <item>Математика</item>
+        <item>Русский Язык</item>
+        <item>Химия</item>
+        <item>Физкультура</item>
+        <item>Информатика</item>
+        <item>Информатика</item>
+    </string-array>
+
+    <string-array name="saturday">
+        <item>Математика</item>
+        <item>Русский Язык</item>
+        <item>Химия</item>
+        <item>Физкультура</item>
+        <item>Информатика</item>
+        <item>Информатика</item>
+    </string-array>
+
+    <string-array name="Математика">
+        <item>Линейка</item>
+        <item>Калькулятор</item>
+        <item>Демидович</item>
+    </string-array>
+
+    <string-array name="РусскийЯзык">
+        <item>Ручка</item>
+        <item>Тетрадка</item>
+        <item>Учебник</item>
+    </string-array>
+
+    <string-array name="Химия">
+        <item>Фольга</item>
+        <item>Пробирка</item>
+        <item>Демидович</item>
+    </string-array>
+
+    <string-array name="Физкультура">
+        <item>Линейка</item>
+        <item>Калькулятор</item>
+        <item>Демидович</item>
+    </string-array>
+
+    <string-array name="Информатика">
+        <item>Линейка</item>
+        <item>Калькулятор</item>
+        <item>Демидович</item>
+    </string-array>
+
+</resources>
