@@ -9,10 +9,12 @@ import android.R.attr.right
 
 import android.R.attr.left
 import android.content.Intent
+import android.content.SharedPreferences
 import android.view.View
 
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var pref: SharedPreferences
     private var subjectSchedule = arrayOf<Array<String>>()
     private var dayViews = arrayOf<LinearLayout>()
 
@@ -21,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         fillSchedule()
         addListenersToTitles()
-
+        init()
     }
 
     private fun addListenersToTitles() {
@@ -143,6 +145,10 @@ class MainActivity : AppCompatActivity() {
             else -> R.id.saturday
         }
         return id
+    }
+
+    private fun init() {
+        pref = getSharedPreferences("UserData", MODE_PRIVATE)
     }
 
 }

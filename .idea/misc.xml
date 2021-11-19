@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/SchoolScheduleSharedPref/app/src/main/res/layout/activity_items_for_particular_day.xml" value="0.3151041666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SchoolScheduleSharedPref/app/src/main/res/layout/activity_items_list.xml" value="0.3151041666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SchoolScheduleSharedPref/app/src/main/res/layout/activity_main.xml" value="0.1328125" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SchoolShedule2/app/src/main/res/layout/activity_item_list.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SchoolShedule2/app/src/main/res/layout/activity_items_for_particular_day.xml" value="0.30833333333333335" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SchoolShedule2/app/src/main/res/layout/activity_items_list.xml" value="0.34646739130434784" />
