@@ -19,6 +19,7 @@ class ItemsForParticularDay : AppCompatActivity() {
         )
         var itemsList: Array<String> = arrayOf()
 
+        var pref = getSharedPreferences("UserData", MODE_PRIVATE)
 
         for (subject in listOfSubjects) {
             var subjectWithoutSpaces = subject.replace(" ", "")
@@ -28,12 +29,29 @@ class ItemsForParticularDay : AppCompatActivity() {
                     packageName
                 )
             )
+
             for (item in listOfItems) {
                 if (!itemsList.contains(item)) {
                     itemsList += item
                 }
             }
+            if (pref.contains(subjectWithoutSpaces)) {
+                var listOfUserItems =
+                    pref.getString(subjectWithoutSpaces, "defaultName")?.split(",")
+                if (listOfUserItems != null) {
+                    for (item in listOfUserItems) {
+                        if (item.isNotEmpty()) {
+                            if (!itemsList.contains(item)) {
+                                itemsList += item
+                            }
+                        }
+                    }
+                }
+            }
+
+
         }
+
 
         var lv: LinearLayout = findViewById(R.id.items_for_particular_day)
 
@@ -56,9 +74,9 @@ class ItemsForParticularDay : AppCompatActivity() {
     private fun rusNameToEng(value: String?): String {
         val array = when (value) {
             "Понелельник" -> "monday"
-            "Вторник"-> "tuesday"
+            "Вторник" -> "tuesday"
             "Среда" -> "wednesday"
-            "Четверг"-> "thursday"
+            "Четверг" -> "thursday"
             "Пятница" -> "friday"
             else -> "saturday"
         }
